@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image:linear-gradient(90deg,rgba(0, 0, 0, 0.692) 40% ,rgba(255, 217, 0, 0.425)),url(../images/heade.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container .flow{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .flow .nave{
+    position: absolute;
+    right: 20%;
+}
+.container .flow .nave ul li a{
+    text-decoration: none;
+    margin: 8px;
+    color: #fff;
+}
+.container .flow .nave ul li{
+    display: inline-block;
+    line-height: 100px;
+}
+.container .flow .logo{
+    position: absolute;
+    left: 0%;
+    height: auto;
+}
+.container .tex{
+    width: 35%;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.container  .flow .parent .tex h1,p{
+    color: rgba(255, 255, 255, 0.699);
+}
+.container .flow .pa{
+    height: auto;
+  
+    
+}
+.container .flow .parent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tex #sym li{
+    display: inline-block;
+    margin: 5px;
+
+}
+.tex #sym li i{
+    margin: 5px;
+    color: rgba(255, 174, 0, 0.849);
+}
+@media(max-width:450px) {
+    .container .flow{
+        display:block ;
+        width: 100%;
+        
+    }
+    .container .flow .nave ul li{
+        display: block;
+    }
+    .container .flow .nave{
+        width: 100%;
+    }
+    .container .flow .parent{
+        width: 100%;
+    }
+    
+}
+@media(max-width:442px){
+    .container .flow .parent .text{
+        width: auto;
+    }
+    
+}
+
+
+
+
