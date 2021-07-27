@@ -4,7 +4,7 @@
 }
 
 .container{
-    background-image:linear-gradient(90deg,rgba(0, 0, 0, 0.692) 40% ,rgba(255, 217, 0, 0.425)),url(../images/heade.jpg);
+    background-image:linear-gradient(90deg,rgba(0, 0, 0, 0.555) 40% ,rgba(255, 217, 0, 0.288)),url(../images/Groupe.png);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -182,6 +182,11 @@
 }
 .degrade .text-degrade h1{
     color: #fff;
+}
+.bleeu{
+    width: 100%;
+    height: 50vh;
+    background:linear-gradient(90deg,#25658F 40% ,#25DBC9);
 }
 
 
