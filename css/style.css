@@ -6,7 +6,7 @@
 .container{
     background-image:linear-gradient(90deg,rgba(0, 0, 0, 0.555) 40% ,rgba(255, 217, 0, 0.288)),url(../images/Groupe.png);
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -20,7 +20,9 @@
 }
 .container .flow .nave{
     position: absolute;
-    right: 20%;
+    right: 10%;
+    width: 50%;
+    min-height: 8vh;
 }
 .container .flow .nave ul li a{
     text-decoration: none;
@@ -37,7 +39,7 @@
     height: auto;
 }
 .container .tex{
-    width: 35%;
+    width: 100%;
     display: flex;
     margin-top: 0px;
     margin-left: 15px;
@@ -113,7 +115,7 @@
     height: auto;
     justify-content: space-around;
 }
-.activites .text, .activites .image,.activites .text2, .activites .image2{
+.activites .text, .activites .image,.activites2 .text2, .activites2 .image2,.activites3 .text3, .activites3 .image3{
     width: 45%;
     margin-top: 20px;
 }
@@ -125,12 +127,31 @@
  background-size: cover;
  height: 50vh;
 }
-.activites .text {
-    
-
+.activites2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
 }
-.activites .image2{
+.activites2 .image2{
     background-image: url(../images/pexels-photo-4046303.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.activites3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.activites3 .image3{
+    background-image: url(../images/pexels-photo-4427961@2x.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,7 +218,80 @@
 .bleeu .disign{
    color: #fff;
 }
+.swiper-container {
+    width:100%;
+    height: 200px;
+  }
 
+.container .flow .nave .tabo div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.952);
+    transition: all 0.3s ease;
+}
+.container .flow .nave .tabo{
+    position: absolute;
+    right: 0%;
+    top: 45%;
+    display: none;
+}
+@media screen and (max-width:760px){
+     .container{
+         width: 100%;
+     }
+     .container .logo img{
+         width: 30px;
+         height: 20px;
+
+     }
+     .container .flow .nave ul{
+         display: none;
+     }
+     .container .flow .nave .tabo{
+         display: block;
+     }
+   
+    
+    
+}
+@media screen and (max-width:789px){
+    .solutions{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .solutions .solution{
+        width: 45%;
+    }
+
+}
+@media screen and (max-width:516px){
+    .solutions{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .solutions .solution{
+        width: 90%;
+    }
+   
+}
+
+    @media screen and (max-width:679px){
+        .activites,.activites2,.activites3{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .activites .text,.activites .image,.activites2 .text2, .activites2 .image2,.activites3 .text3, .activites3 .image3{
+            width: 90%;
+        }
+
+    }
 
 
 
