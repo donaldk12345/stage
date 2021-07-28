@@ -191,7 +191,7 @@
 }
 .degrade{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background:linear-gradient(90deg,#8F2577 40% ,#dbba25);
     position: relative;
 }
@@ -280,7 +280,7 @@
    
 }
 
-    @media screen and (max-width:679px){
+@media screen and (max-width:679px){
         .activites,.activites2,.activites3{
             display: flex;
             flex-direction: row;
@@ -293,8 +293,74 @@
 
     }
 
+@media screen and (max-width:652px){
+    .expertise{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .expertise .expert{
+        width: 45%;
+    }
 
+}
 
+.travaille{
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+.travaille  .imag{
+    background-image:url(../images/graphe.png);
+    width: 40%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 30%;
+  
+}
+.travaille2{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 10px;
 
+}
+.travaille2 .text{
+    position: absolute;
+    width: 40%;
+    right: 30%;
+    margin-top: 20px;
+}
+@media screen and (max-width:989px){
+    .travaille2{
+        width: 100%;
+        height: 160px;
+    }
+    .travaille2 .text{
+        width: 50%;
+    }
+    .travaille{
+        width: 100%;
+        height: auto;
+    }
 
+}
+@media screen and (max-width:600px){
 
+    .travaille2{
+        width: 100%;
+        height: 250px;
+    }
+    .travaille .imag{
+        width: 40%;
+    }
+    .travaille{
+        width: 100%;
+    }
+}
