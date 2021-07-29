@@ -310,7 +310,7 @@
 .travaille{
     position: relative;
     width: 100%;
-    height: auto;
+    height: 60vh;
     
 }
 .travaille  .imag{
@@ -363,4 +363,81 @@
     .travaille{
         width: 100%;
     }
+}
+footer{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #000000;
+    position: sticky;
+}
+footer .foot{
+    width: 30%;
+}
+footer .foot .socio img{
+    margin: 5px;
+}
+footer .foot .liste ul li{
+    margin: 5px;
+}
+footer .foot .liste ul li a i{
+    color: #FFB500;
+    margin: 5px;
+}
+footer .foot .liste ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer .foot .liste2 ul li a{
+    text-decoration: none;
+    
+}
+footer .foot .liste2 ul li{
+    margin: 8px;
+    list-style: none;
+}
+.copyry{
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.copyry .copy{
+    width: 47%;
+}
+@media screen and (max-width:834px){
+    footer{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100vh;
+
+    }
+    footer .foot{
+        width: 45%;
+    }
+
+}
+@media screen and (max-width:492px){
+    footer{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+
+    }
+    footer .foot{
+        width: 45%;
+    }
+
 }
